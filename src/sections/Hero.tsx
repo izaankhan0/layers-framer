@@ -9,10 +9,20 @@ import { motion } from "framer-motion";
 export default function Hero() {
     return (
         <section className="overflow-x-hidden container md:px-[4rem] px-[1rem]  mt-48 md:mt-16 font-semibold ">
-            <motion.div>
+            <motion.div
+                className="lg:inline hidden absolute z-40 pointer-events-none"
+                transition={{ ease: "easeInOut", delay: 0, duration: 3 }}
+                initial={{ x: 75, y: 200 }} // coords for box 1 starter
+                animate={{ x: [75, -70, 75, 200], y: [200, 300, 200, 100] }} // coords for box 1 final
+            >
                 <Pointer name="izaan" color="red" />
             </motion.div>
-            <motion.div>
+            <motion.div
+                className="lg:inline hidden absolute z-40 pointer-events-none"
+                transition={{ ease: "easeInOut", delay: 1.5, duration: 3 }}
+                initial={{ x:900 , y: 300 }} // coords for box 1 starter
+                animate={{ x: [ 900,1215, 1015, 860] , y: [ 300 ,350, 140, 200]  }} // coords for box 1 final
+            >
                 <Pointer name="khan" />
             </motion.div>
             <motion.div
@@ -37,7 +47,7 @@ export default function Hero() {
                     top: -300,
                     bottom: 300,
                 }}
-                className="cursor-pointer lg:inline hidden absolute top-10 left-10"
+                className="cursor-pointer lg:inline hidden absolute top-10 left-10 z-10"
             >
                 <Image
                     src={Floaty1}
@@ -70,7 +80,7 @@ export default function Hero() {
                     top: -500,
                     bottom: 500,
                 }}
-                className="cursor-pointer lg:inline hidden absolute top-20 right-10"
+                className="cursor-pointer lg:inline hidden absolute top-20 right-10 z-10"
             >
                 <Image
                     src={Floaty2}
