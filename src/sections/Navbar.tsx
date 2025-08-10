@@ -22,7 +22,7 @@ export default function Navbar() {
                 <ul className="lg:flex justify-evenly items-center hidden">
                     {navLinks.map((link, index) => {
                         return (
-                            <a href={link.href}>
+                            <a href={link.href} key={index}>
                                 <li key={index} className="mx-5">
                                     {link.label}
                                 </li>
@@ -81,7 +81,7 @@ export default function Navbar() {
                         >
                             {navLinks.map((link, index) => {
                                 return (
-                                    <a href={link.href}>
+                                    <a href={link.href} key={index}>
                                         <li
                                             key={index}
                                             className="my-5 text-center"

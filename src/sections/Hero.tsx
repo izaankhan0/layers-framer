@@ -2,33 +2,40 @@
 
 import Floaty1 from "@/assets/images/design-example-1.png";
 import Floaty2 from "@/assets/images/design-example-2.png";
+import Pointer from "@/components/Pointer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Hero() {
     return (
         <section className="overflow-x-hidden container md:px-[4rem] px-[1rem]  mt-48 md:mt-16 font-semibold ">
+            <motion.div>
+                <Pointer name="izaan" color="red" />
+            </motion.div>
+            <motion.div>
+                <Pointer name="khan" />
+            </motion.div>
             <motion.div
-            transition={{
-                duration:1,
-                ease:"easeInOut",
-                delay:1
-            }}
-                initial ={{
-                    x:-200,
-                    y:300
+                transition={{
+                    duration: 1,
+                    ease: "easeInOut",
+                    delay: 1,
+                }}
+                initial={{
+                    x: -160,
+                    y: 300,
                 }}
                 animate={{
-                    x:-20,
-                    y:200
+                    x: -20,
+                    y: 200,
                 }}
                 drag
                 dragElastic={0.2}
                 dragConstraints={{
                     left: -200,
-                    right: 1200,
-                    // top: -100,
-                    // bottom: 100,
+                    right: 1250,
+                    top: -300,
+                    bottom: 300,
                 }}
                 className="cursor-pointer lg:inline hidden absolute top-10 left-10"
             >
@@ -44,12 +51,25 @@ export default function Hero() {
             <motion.div
                 drag
                 dragElastic={0.2}
-                // dragConstraints={{
-                //     left: 100,
-                //     right: 0,
-                //     top: -100,
-                //     bottom: 100,
-                // }}
+                transition={{
+                    duration: 1,
+                    ease: "easeInOut",
+                    delay: 2.5,
+                }}
+                initial={{
+                    x: 360,
+                    y: 300,
+                }}
+                animate={{
+                    x: 160,
+                    y: 90,
+                }}
+                dragConstraints={{
+                    left: -1300,
+                    right: 350,
+                    top: -500,
+                    bottom: 500,
+                }}
                 className="cursor-pointer lg:inline hidden absolute top-20 right-10"
             >
                 <Image
