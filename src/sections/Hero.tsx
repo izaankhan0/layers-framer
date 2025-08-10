@@ -47,7 +47,7 @@ export default function Hero() {
                     top: -300,
                     bottom: 300,
                 }}
-                className="cursor-pointer lg:inline hidden absolute top-10 left-10 z-10"
+                className="lg:inline hidden absolute top-10 left-10 z-10"
             >
                 <Image
                     src={Floaty1}
@@ -80,7 +80,7 @@ export default function Hero() {
                     top: -500,
                     bottom: 500,
                 }}
-                className="cursor-pointer lg:inline hidden absolute top-20 right-10 z-10"
+                className="lg:inline hidden absolute top-20 right-10 z-10"
             >
                 <Image
                     src={Floaty2}
