@@ -16,7 +16,7 @@ export default function Navbar() {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <div className="z-50 backdrop-blur-md bg-black md:bg-opacity-70 bg-opacity-50 fixed lg:w-[940px] mx-8 w-[90%] flex border-2 border-gray-600 rounded-[27px] md:rounded-full justify-between py-2 px-3 mt-8 flex-col ">
+        <div className="z-50 backdrop-blur-md bg-black md:bg-opacity-50 bg-opacity-50 fixed lg:w-[940px] mx-8 w-[90%] flex border-2 border-gray-600/40 rounded-[27px] md:rounded-full justify-between py-2 px-3 mt-8 flex-col ">
             <div className="flex justify-between">
                 <Image src={Logo} alt="Logo" className="w-38" />
                 <ul className="lg:flex justify-evenly items-center hidden">
