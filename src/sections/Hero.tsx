@@ -12,16 +12,16 @@ export default function Hero() {
             <motion.div
                 className="lg:inline hidden absolute z-40 pointer-events-none"
                 transition={{ ease: "easeInOut", delay: 0, duration: 3 }}
-                initial={{ x: 75, y: 200 }} // coords for box 1 starter
-                animate={{ x: [75, -70, 75, 200], y: [200, 300, 200, 100] }} // coords for box 1 final
+                initial={{ x: 75, y: 200 }}
+                animate={{ x: [75, -70, 75, 200], y: [200, 300, 200, 100] }}
             >
                 <Pointer name="izaan" color="red" />
             </motion.div>
             <motion.div
                 className="lg:inline hidden absolute z-40 pointer-events-none"
                 transition={{ ease: "easeInOut", delay: 1.5, duration: 3 }}
-                initial={{ x:900 , y: 300 }} // coords for box 1 starter
-                animate={{ x: [ 900,1215, 1015, 860] , y: [ 300 ,350, 140, 200]  }} // coords for box 1 final
+                initial={{ x:900 , y: 300 }}
+                animate={{ x: [ 900,1215, 1015, 860] , y: [ 300 ,350, 140, 200]  }}
             >
                 <Pointer name="khan" />
             </motion.div>
