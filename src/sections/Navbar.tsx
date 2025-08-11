@@ -23,7 +23,7 @@ export default function Navbar() {
                     {navLinks.map((link, index) => {
                         return (
                             <a href={link.href} key={index}>
-                                <li key={index} className="mx-5">
+                                <li key={index+1} className="mx-5">
                                     {link.label}
                                 </li>
                             </a>
