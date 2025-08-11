@@ -1,7 +1,7 @@
 "use client";
 
 import Toptag from "@/components/Toptag";
-import { useMotionValueEvent, useScroll } from "framer-motion";
+import { useScroll } from "framer-motion";
 import { useTransform } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
